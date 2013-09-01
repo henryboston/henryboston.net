@@ -7,9 +7,6 @@
     "moment": "2.x",
     "underscore": "1.4.x"
   },
-  //"scripts": {
-  //  "deploy": "rm -rf ./build; wintersmith build; cd ./build && git init . && git add . && git commit -m \"Deploy\"; git push \"git@github.com:blakeembrey/blakeembrey.com.git\" master:gh-pages --force && rm -rf .git"
-  //},
   "repository": {
     "type": "git",
     "url": "https://github.com/henryboston/henryboston.net"

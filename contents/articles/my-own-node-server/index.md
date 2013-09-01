@@ -1,21 +1,21 @@
 ---
-title: Writing a Github Pages Deploy Script
-date: 2013-08-04 20:40
-author: Blake Embrey
+title: Create your own node.js server!
+subtitle: Building My Own Personal Node.js Web Server
+date: 2013-08-31 22:20
+author: Henry Boston
 template: article.jade
 ---
-
 ## Building My Own Personal Node.js Web Server
 
 My parents had an old computer lying around unusued.  They let me take it hack home with me. I thought to myself "Henry, what can I use this computer for?". I've always wanted to setup my own personal web server and am even more eager to
 gain experience with [Node.JS][1].
 
 ### Removing Windows and Intsalling Linux
-First things first I had to wipe Windows XP off the machine and install a linux distribution. The criteria I identifed while researching which OS to choose is as follows: 
+First things first I had to wipe Windows XP off the machine and install a linux distribution. The criteria I identifed while researching which OS to choose is as follows:
 
-*	I wanted something light weight because the hardware on the machine is old and outdated
-*	No GUI interface as It will force me to use the terminal and become more familair with linux commands
-*	Well maintained and supported so I can install various open source software without too much of a hassle setting up the server
+*   I wanted something light weight because the hardware on the machine is old and outdated
+*   No GUI interface as It will force me to use the terminal and become more familair with linux commands
+*   Well maintained and supported so I can install various open source software without too much of a hassle setting up the server
 
 I have my own [VPS][2] with [CentOS][3] which gives me the advantage of working experience, but I have run into some issues installing node on my VPS before so this ruled out CentOS.
 
@@ -46,20 +46,12 @@ And Voila, you should have node.js sucesfully installed.  To test create this si
   vim helloworld.js
 ```
 helloworld.js should look like this:
-```bash  
-  console.log("NODE IS THE BEST, hello world");
-```
-Save the file and quit out of vim
 ```bash
-  :wq!
+ console.log("Hello World, NODE IS THE BEST!");
 ```
-Now try:
-```bash
-  node helloworld.js
-```
-If the text is printed to the console you have sucessfully install node.js! YAY, do a happy dance!
+Save the file and quit out of vim by pressing ``:wq!`` Now try ``node helloworld.js`` If the text is printed to the console you have sucessfully installed node.js! YAY, do a happy dance!
 
- 
+
 
 
 [1]: http://nodejs.org/

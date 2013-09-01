@@ -24,8 +24,8 @@ html.no-js(lang='en')
     include masthead
     main.content.container(role='main')
       block content
-    footer.footer(role='contentinfo')
-      a.icon-home.back-to-home(href='/', title=locals.name)
+    footer#footer.clearfix
+      //a.icon-home.back-to-home(href='/', title=locals.name)
       block footer
         p.container
           &copy; #{ new Date().getFullYear() }&nbsp;
