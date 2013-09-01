@@ -1,0 +1,25 @@
+{
+  "locals": {
+    "url": "http://henryboston.net",
+    "name": "Henry Boston",
+    "owner": "Henry Boston",
+    "description": "My thoughts materialised into a blog"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "_": "underscore",
+    "moment": "moment"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 4
+  }
+}
