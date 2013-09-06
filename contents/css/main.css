@@ -25,7 +25,6 @@ dl,
 ol,
 ul,
 pre,
-img,
 .btn,
 table,
 blockquote {
@@ -253,7 +252,6 @@ table tr:hover td {
 .container {
   margin: 0 auto;
   max-width: 35.4em;
-  width: 90%;
 }
 
 .back-to-home {
@@ -345,17 +343,18 @@ table tr:hover td {
   margin: 0 auto;
 }
 #site.sep {
-  background: url("../nav-shadow-blue.png") no-repeat 50% -2px;
-  background-image: -webkit-radial-gradient(50% -2px, 350px 7px, rgba(162,168,184,0.45) -32%, #fff 100%);
-  background-image: -o-radial-gradient(50% -2px, 350px 7px, rgba(162,168,184,0.45) -32%, #fff 100%);
-  background-image: radial-gradient(50% -2px, 350px 7px, rgba(162,168,184,0.45) -32%,#ffffff 100%);
-  background-repeat: no-repeat;
-  background-position: center 1px;
 }
 #cover-wrap {
   width: 100%;
   line-height: 1;
   padding: 13px 13px 0 0;
+}
+#postex {
+  width: 100%
+}
+#postex article, #postex section {
+  margin: 0 auto;
+  max-width: 35.4em;
 }
 #nav {
   text-align: center;
@@ -505,7 +504,91 @@ table tr:hover td {
 .no-js #disqus_thread {
   display: none;
 }
+.list-none li {
+  list-style-type: none !important;
+}
 
+/* Photos */
+.photo-thumbs-list {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+.photo-thumbs-list li {
+  float: left;
+  margin: 0 !important;
+  line-height: 0;
+  width: 33.3333%;
+  position: relative;
+}
+figure {
+  text-align: center;
+}
+figure.in-photo-list {
+  margin: 0;
+}
+figure img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto !important;
+  -ms-interpolation-mode: bicubic
+}
+.photo-thumbs-list li img {
+  width: 100%;
+  height: auto !important;
+  -webkit-transition: opacity, 0.15s;
+  -moz-transition: opacity,0.15s;
+  -ms-transition: opacity,0.15s;
+  -o-transition: opacity,0.15s;
+  transition: opacity,0.15s;
+}
+.photo-thumbs-list li img:hover {
+  opacity: 1;
+}
+.photo-thumbs-list li a:hover figcaption {
+  opacity: 1;
+}
+a img {
+  border: 0;
+}
+figure figcaption {
+  font-size: 0.85em;
+}
+.photo-thumbs-list figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em 0.5em 0.5em;
+  text-align: left;
+  text-shadow: 0 1px 0 #000;
+  font-size: 1.1em !important;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  color: #fff !important;
+  overflow: hidden;
+  white-space: pre;
+  line-height: 1.2;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+  -webkit-transition: opacity,0.1s;
+  transition: opacity,0.1s;
+}
+/* Projects */
+.project-thumbs-list {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+.project-thumbs-list li {
+  float: left;
+  margin: 0 !important;
+  line-height: 0;
+  width: 33.3333%;
+  position: relative;
+}
+
+/* If you like cutting down trees */
 @media print {
   html {
     border: none;
@@ -580,6 +663,9 @@ table tr:hover td {
   #masthead {
     text-align: center;
     width: 100%;
+  }
+  #nav ul li a span {
+    display: none;
   }
 }
 @media only screen and (min-width: 40.001em) {
