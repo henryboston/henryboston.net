@@ -394,14 +394,22 @@ table tr:hover td {
 #nav li a:hover {
   color: #8f95a8;
 }
-#nav li .about i, #nav li .posts i, #nav li .maps i, #nav li .photos i {
+#nav li .about i, #nav li .posts i, #nav li .maps i, #nav li .photos i, #nav li .home i{
   background-image: url("../img/nav-sprite.png");
   background-repeat: no-repeat;
   opacity: 0.8;
   display: inline-block;
 }
+
 #nav li a:hover i {
   opacity: 1;
+}
+#nav li .home i {
+  width: 24px;
+  height: 24px;
+  background-position: 0 0;
+  margin-right: 6px;
+  margin-bottom: -4px;
 }
 #nav li .about i {
   width: 24px;
@@ -422,13 +430,15 @@ table tr:hover td {
   height: 21px;
   background-position: -200px 0;
   margin-right: 7px;
-  margin-bottom: -3px;
+  margin-bottom: -4px;
 }
 #nav li .maps i {
   width: 29px;
   height: 24px;
   background-position: -254px 0;
-  margin-bottom: -5px;
+  margin-bottom: -4px;
+  margin-right: 7px;
+  margin-left: -10px;
 }
 
 /* Individual Photo Nav */
@@ -502,9 +512,6 @@ body#photocontent #postex nav .arr {
   user-select: none;
 }
 
-body#photocontent #postex nav .arr:hover {
-  opacity: 1;
-}
 
 /* Content photography */
 figure.photo {
@@ -619,19 +626,33 @@ figure figcaption {
   transition: opacity,0.1s;
 }
 /* Projects */
-.project-thumbs-list {
-  width: 900px;
-  margin: 0 auto;
-  padding: 0;
-}
-.project-thumbs-list li {
+.span4 {
+  width: 11em;
   float: left;
-  margin: 0 !important;
-  line-height: 0;
-  width: 33.3333%;
-  position: relative;
+  max-height: 300px;
+  margin-right: 20px;
 }
+.span8 {
+  max-width: 23em;
+  float: left;
 
+}
+.row {
+  padding: 30px 0;
+  position: relative;
+  border-top: 2px solid #333333;
+}
+.row:before, .row:after {
+  display: table;
+  content: "";
+}
+.row:after {
+  clear: both;
+}
+.project p {
+  font-size: 16px;
+  line-height: 20px;
+}
 /* Individual Photo */
 
 body#photocontent #postex figure.feature-image {
