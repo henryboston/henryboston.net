@@ -5,7 +5,8 @@
   "private": true,
   "dependencies": {
     "moment": "2.x",
-    "underscore": "1.4.x"
+    "underscore": "1.4.x",
+    "wintersmith-stylus": "*"
   },
   "repository": {
     "type": "git",

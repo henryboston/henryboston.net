@@ -1,4 +1,10 @@
 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -75,6 +81,12 @@ a:hover {
   background-color: #4B89BF;
 }
 
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
 img,
 audio,
 embed,
@@ -286,6 +298,7 @@ table tr:hover td {
   visibility: hidden;
   font-size: 0;
 }
+
 /* Masthead */
 #mastwrap {
   line-height: 1;
@@ -328,6 +341,7 @@ table tr:hover td {
   font-size: 1em;
   margin: .45em 0 0 0;
 }
+
 /* main nav */
 #site {
   font-family: Helvetica, Arial, Univers, Calibri, sans-serif;
@@ -417,12 +431,246 @@ table tr:hover td {
   margin-bottom: -5px;
 }
 
+/* Individual Photo Nav */
+body#photocontent #postex nav .home {
+  background-image: url("../img/nav-sprite.png");
+  background-repeat: no-repeat;
+  opacity: 0.65;
+  display: inline-block;
+  -webkit-transition: opacity,0.15s;
+  -moz-transition: opacity,0.15s;
+  -ms-transition: opacity,0.15s;
+  -o-transition: opacity,0.15s;
+  transition: opacity,0.15s;
+  width: 24px;
+  height: 24px;
+  background-position: 0 0;
+  margin-right: 10px;
+}
+body#photocontent #postex nav .home:hover {
+  opacity: 1;
+}
+body#photocontent #postex nav .photos {
+  width: 28px;
+  height: 21px;
+  background-image: url("../img/nav-sprite.png");
+  background-repeat: no-repeat;
+  background-position: -200px 0;
+  margin: 0 7px -10px 0;
+  opacity: 0.5;
+  -webkit-transition: opacity,0.15s;
+  -moz-transition: opacity,0.15s;
+  -ms-transition: opacity,0.15s;
+  -o-transition: opacity,0.15s;
+  transition: opacity,0.15s;
+  display: inline-block;
+}
+body#photocontent #postex nav .photos:hover {
+  opacity: 1;
+}
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+body#photocontent #postex nav .arr {
+  opacity: 0.8;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2.65em;
+  line-height: 0;
+  color: #a6adbd;
+  -webkit-transition: opacity,0.1s;
+  -moz-transition: opacity,0.1s;
+  -ms-transition: opacity,0.1s;
+  -o-transition: opacity,0.1s;
+  transition: opacity,0.1s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+body#photocontent #postex nav .arr:hover {
+  opacity: 1;
+}
+
+/* Content photography */
+figure.photo {
+  -webkit-box-shadow: 0 0 4px rgba(48,47,39,0.3);
+  -moz-box-shadow: 0 0 4px rgba(48,47,39,0.3);
+  box-shadow: 0 0 4px rgba(48,47,39,0.3);
+}
+figure.photo a {
+  border: 0.1em solid rgba(48,47,39,0.05);
+  position: relative;
+  width: 100%;
+}
+figure.photo a:hover,
+figure.photo a:focus {
+  border-color: #e03e36;
+}
+figure.photo a:hover figcaption,
+figure.photo a:focus figcaption {
+  display: block;
+}
+figure.photo a:active {
+  border-color: #d92a21;
+}
+figure.photo a figcaption {
+  background: #e03e36;
+  color: #fff;
+  padding: 0.2em 7%;
+  position: absolute;
+  bottom: 0em;
+  display: none;
+}
+figure a {
+  display: block;
+  padding: 0;
+}
+article.photography figure.photo {
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  overflow: hidden;
+}
+article.photo figure.photo {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 5em;
+}
+
+/* Photo List */
+.photo-thumbs-list {
+    width: 900px;
+    margin: 0 auto;
+    padding: 0;
+}
+.photo-thumbs-list li {
+  float: left;
+  margin: 0 !important;
+  line-height: 0;
+  width: 33.3333%;
+  position: relative;
+}
+figure {
+  text-align: center;
+}
+figure.in-photo-list {
+  margin: 0;
+}
+figure img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto !important;
+  -ms-interpolation-mode: bicubic
+}
+.photo-thumbs-list li img {
+  width: 100%;
+  height: auto !important;
+  -webkit-transition: opacity, 0.15s;
+  -moz-transition: opacity,0.15s;
+  -ms-transition: opacity,0.15s;
+  -o-transition: opacity,0.15s;
+  transition: opacity,0.15s;
+}
+.photo-thumbs-list li img:hover {
+  opacity: 1;
+}
+.photo-thumbs-list li a:hover figcaption {
+  opacity: 1;
+}
+a img {
+  border: 0;
+}
+figure figcaption {
+  font-size: 0.85em;
+}
+.photo-thumbs-list figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em 0.5em 0.5em;
+  text-align: left;
+  text-shadow: 0 1px 0 #000;
+  font-size: 1.1em !important;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  color: #fff !important;
+  overflow: hidden;
+  white-space: pre;
+  line-height: 1.2;
+  opacity: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+  -webkit-transition: opacity,0.1s;
+  transition: opacity,0.1s;
+}
+/* Projects */
+.project-thumbs-list {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+.project-thumbs-list li {
+  float: left;
+  margin: 0 !important;
+  line-height: 0;
+  width: 33.3333%;
+  position: relative;
+}
+
+/* Individual Photo */
+
+body#photocontent #postex figure.feature-image {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+  text-align: center;
+  line-height: 0;
+}
+
+body#photocontent #postex figure.feature-image img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 1000px;
+  height: auto !important;
+  -ms-interpolation-mode: bicubic;
+}
 
 .header-title,
 .content-title {
   margin: 0;
   color: #192D3F;
 }
+
+#photo_blog .header-title {
+  margin: 0 auto;
+  line-height: 1;
+}
+
+#photo_blog h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
 
 .header-title {
   color: #192D3F;
@@ -594,4 +842,22 @@ table tr:hover td {
   float: right;
   width: 30em;
   }
+
 }
+@media (min-width: 365px) {
+  article.photography figure.photo {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+  }
+}
+@media (min-width: 720px) {
+  article.photography figure.photo {
+    width: 30%;
+  }
+  article.photography figure.photo:nth-child(3n+1),
+  article.photography figure.photo:nth-child(3n+2) {
+    margin-right: 3%;
+  }
+}
+

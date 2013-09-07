@@ -6,7 +6,8 @@
     "description": "My thoughts materialised into a blog"
   },
   "plugins": [
-    "./plugins/paginator.coffee"
+    "./plugins/paginator.coffee",
+    "./node_modules/wintersmith-stylus/"
   ],
   "require": {
     "_": "underscore",

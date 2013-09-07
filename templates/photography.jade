@@ -24,15 +24,14 @@ block content
       - }).compact().sortBy(function(item) {
       -   return -item.date;
       - }).value();
-
-      each photo in photos
-        figure.photo
-          a.local(href=photo.url, title=photo.title)
-            img(src='#{photo.url}thumb.jpg', alt=photo.title)
-            figcaption= photo.title
+      ul#thumbslist.photo-thumbs-list.clearfix.list-none
+        each photo in photos
+          li
+            figure.in-photo-list
+              a.local(href=photo.url, title=photo.title)
+                img(src='#{photo.url}thumb.jpg', alt=photo.title)
+                figcaption= photo.title
 
       .clear
-
-    section If you're interested in more information or a print, feel free to contact me!
 
     .clear
