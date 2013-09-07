@@ -3,4 +3,42 @@ div#content
   div.content-wrap
     block content
       section.about
-        !=contents['about.md'].html
+        header.entry-title
+          h2 Hi, there!.
+        p My name is
+          strong  Henry Morgan Boston
+          |  but you can call me
+          strong
+            a(href='http://twitter.com/hbotx', target='_blank')  Henry
+          . I enjoy creating visualizations for the web including interactive maps, interesting websites, and innovative applications.
+      figure.center.focal-point
+        div
+          img(src='/img/about-henry-canyon.jpg', alt='Henry Boston at Palo Duro Canyon')
+        figcaption At Palo Duro Canyon
+      section.about
+        p Currently I'm a student at the
+          a(href='http://www.unt.edu/', target='_blank')  University of North Texas,
+          |  where I'm purusing degrees in
+          a(href='http://pacs.unt.edu/public-administration/content/emergency-administration-and-planning-0', target='_blank')  Emergency Administration and Planning
+          |  &
+          a(href='http://anthropology.unt.edu/anthatunt-overview.php', target="_blank")  Applied Anthropology.
+          |  I will also obtain a certificate in
+          a(href='http://geography.unt.edu/academic-programs/gis-certificate', target='_blank')  Geographic Information Systems
+          |.  I hope to one day create interactive web maps for use in the field of emergency management.
+        p  Aside from that I'm your typical college student. I love traveling, biking, photography, and BBQ.
+        h3 Elsewhere
+        strong
+          a(href='http://instagram.com/hbotx', target='_blank') Instagram
+        ,
+        strong
+          a(href='http://twitter.com/hbotx', target='_blank')  Twitter
+        ,
+        strong
+          a(href='http://github.com/henryboston', target='_blank')  Github
+        ,
+        strong
+          a(href='http://www.linkedin.com/in/henryboston', target='_blank')  LinkedIn
+        p You can also email me at firstname.lastname[at]gmail.com
+
+
+

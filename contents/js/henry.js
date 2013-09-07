@@ -1,5 +1,5 @@
 /* Graduation Counter Down Timer */
-CountDownTimer('05/10/2014 11:59 PM', 'countdown');
+
 
 function CountDownTimer(dt, id)
 {
@@ -32,3 +32,4 @@ function CountDownTimer(dt, id)
 
  timer = setInterval(showRemaining, 1000);
 }
+CountDownTimer('05/10/2014 11:59 PM', "countdown");

@@ -266,6 +266,22 @@ table tr:hover td {
   max-width: 35.4em;
 }
 
+.center {
+  text-align: center;
+}
+.focal-point {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+.focal-point img {
+  width: 100%;
+  max-width: 1000px;
+  height: auto !important;
+}
+.focal-point figcaption {
+  font-size: 0.85em;
+}
+
 .back-to-home {
   display: block;
   width: 2em;
