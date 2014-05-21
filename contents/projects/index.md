@@ -1,5 +1,5 @@
 ---
 title: Projects
-template: projects.jade
+template: index.jade
 category: projects
 ---

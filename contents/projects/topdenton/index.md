@@ -2,7 +2,7 @@
 title: Top Denton
 date: Sat Dec 01 2011 14:55:36 GMT+0100 (CET)
 date_formatted: 17 Dec 2011
-template: photo.jade
+template: index.jade
 category: projects
 subtitle: This is a big test, can you see why I love you so much?
 ---
