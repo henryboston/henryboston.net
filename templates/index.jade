@@ -33,12 +33,4 @@ block content
               span.fade #{project.metadata.built}
 
 
-
-
-
-          //li
-            figure.in-project-list
-              a.local(href=project.url, title=project.title)
-                img(src='#{project.url}thumb.jpg', alt=project.title)
-                figcaption= project.title
-            p #{project.metadata.subtitle}
+include footer

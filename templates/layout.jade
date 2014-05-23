@@ -1,6 +1,4 @@
 doctype html
-block vars
-  - var bodyclass = 'index';
 html.no-js(lang='en')
   head
     block head
@@ -14,14 +12,14 @@ html.no-js(lang='en')
       link(rel='stylesheet', href='/css/normalize.css')
       link(rel='stylesheet', href='/css/main.css')
       script(src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js")
-      srcipt(src='/js/henry.js')
+      script(src="http://d3js.org/d3.v3.js")
       script.
         (function(d){d.className=d.className.replace(/\bno-js\b/,'js');})(document.documentElement);
       //if lt IE 9
         script(src='//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js')
-  body(class=bodyclass)
+  body
     include masthead
     div#site.sep
       div#postex
         block content
-
+  include footer

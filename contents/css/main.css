@@ -339,10 +339,14 @@ table tr:hover td {
   -o-border-radius: 6px;
   border-radius: 6px;
   background: url(../img/henry-sq-80.jpg) no-repeat 0 0;
+  z-index: 999;
+  position: relative;
 }
 #masthead hgroup {
   margin: 0.5em auto 0.5em;
   line-height: 1.4;
+  z-index: 999;
+  position: relative;
 }
 #masthead hgroup h1 {
   font-weight: bold;
@@ -685,7 +689,7 @@ figure figcaption {
   box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, .1);
 }
 .row {
-  padding: 30px 0;
+  padding: 15px 0;
   position: relative;
 }
 .row:before, .row:after {
@@ -694,6 +698,9 @@ figure figcaption {
 }
 .row:after {
   clear: both;
+}
+article:last-child {
+  padding-bottom: 100px;
 }
 .project p {
   font-size: 14px;
@@ -945,3 +952,36 @@ body#photocontent #postex figure.feature-image img {
   }
 }
 
+
+
+/* Waves CSS */
+
+.axis path,
+.axis line {
+  fill: blue;
+  stroke: blue;
+  shape-rendering: optimizeSpeed;
+}
+
+.area {
+  fill: #6a4c96;
+  opacity: .05;
+}
+
+.line {
+  stroke-width:2;
+  stroke:orange;
+  fill: blue;
+  stroke-linejoin: bevel;
+  opacity: 0;
+}
+
+svg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: flipv;
+}
