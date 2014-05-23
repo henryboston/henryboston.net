@@ -1,9 +1,10 @@
 ---
-title: FEMA Disaster Declarations 
+title: FEMA Emergency Management 
 template: index.jade
 category: projects
-subtitle: http://www.henryboston.net/map
-publication: University of North Texas, October 2013
-built: Built with D3.js, Javascript and HTML/CSS
+subtitle:
+date: Mon Sep 30 2013 14:55:36 GMT+0100 (CET)
+publication: Federal Emergency Management Agency Region VI, September 2013 
+built: Built with ArcGIS, Photoshop, Illustrator 
 ---
-An interactive web map that displays the total number of federally declared disasters at the county level. Data was obtained from [DATA.GOV](http://www.data.gov).  Disasters are declared through the [FEMA disaster declaration process](http://www.fema.gov/declaration-process).  Created for an Advanced GIS course at the University of North Texas
+As an intern at FEMA I created numerous different maps for emergency management situations including a 30ft map to be used for disaster exercises.  Other maps include federal staging areas, emergency evacuation plans and disaster impacts.  Unfortunately I was required to sign a Non-Disclosure Agreement so I cannot share the maps I created there.
