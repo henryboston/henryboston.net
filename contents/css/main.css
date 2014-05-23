@@ -326,14 +326,13 @@ table tr:hover td {
 #masthead {
   margin: 0 auto;
   color: #57626b;
-  width: 35.4em;
+  max-width: 717px;
 }
 #masthead .henry {
   float: left;
   display: block;
   width: 80px;
   height: 80px;
-  margin: 0.5em 0 0 0.5em;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
@@ -355,7 +354,6 @@ table tr:hover td {
   font-weight: 500;
   color: #999;
   font-size: 1em;
-  margin: .45em 0 0 0;
 }
 
 /* main nav */
@@ -649,14 +647,46 @@ figure figcaption {
   margin-right: 20px;
 }
 .span8 {
-  max-width: 23em;
+  max-width: 717px;
   float: left;
 
+}
+.span8 h3 {
+  display: inline;
+  margin-right: 10px;
+  background-color: #f3f3f3;
+  padding: 0 5px;
+}
+.fade {
+  color: #bbb !important;
+  font-size: 10px !important;
+}
+.span8 span {
+  font-size: 14px;
+  color: #888;
+  vertical-align: text-top;
+}
+.preview {
+  position: relative;
+  border: solid 3px #f3f3f3;
+  -webkit-box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, .11);
+  box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, .1);
+}
+.imageshow {
+  position: relative;
+}
+.shadow::before {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, .11);
+  box-shadow: inset 0px 0px 40px 0px rgba(0, 0, 0, .1);
 }
 .row {
   padding: 30px 0;
   position: relative;
-  border-top: 2px solid #333333;
 }
 .row:before, .row:after {
   display: table;
@@ -666,8 +696,9 @@ figure figcaption {
   clear: both;
 }
 .project p {
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 /* Individual Photo */
 
@@ -873,13 +904,29 @@ body#photocontent #postex figure.feature-image img {
   #nav ul li a span {
     display: none;
   }
+  #postex article {
+    width: 92%;
+  }
 }
 @media only screen and (min-width: 40.001em) {
   #masthead hgroup {
-  float: right;
   width: 30em;
+  margin-right: 30px;
   }
 
+  #postex article {
+    width: 92%;
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
+  #postex article {
+    width: 92%;
+  }
+  #masthead hgroup {
+    margin-right: 15px;
+  }
 }
 @media (min-width: 365px) {
   article.photography figure.photo {

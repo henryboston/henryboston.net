@@ -1,7 +1,7 @@
 extends layout
 
 block title
-  |  Henry Boston / Projects 
+  |  Henry Boston / GIS and Web Development 
 
 prepend content
   - var latest = _.chain(contents.projects._.directories).map(function(item) {
@@ -23,13 +23,14 @@ block content
       each project in projects
         secton(id='#{project.title}')
           div.row
-            div.span4
-              a(href=project.metadata.subtitle, target="_blank", alt=project.title)
-                h2 #{project.title}
-              != project.html
             div.span8
-              a.local(href=project.url, title=project.title)
-                img(src='#{project.url}photo.jpg', alt=project.title)
+              a(href=project.metadata.subtitle, target="_blank" title=project.title)
+                img.preview(src='#{project.url}photo.jpg', alt=project.title)
+              a(href=project.metadata.subtitle, target="_blank", alt=project.title)
+                h3 #{project.title}
+              span #{project.metadata.publication}
+              != project.html
+              span.fade #{project.metadata.built}
 
 
 
