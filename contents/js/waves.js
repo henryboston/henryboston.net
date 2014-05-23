@@ -41,13 +41,13 @@ function updateWindow(){
 }
 window.onresize = updateWindow;
 
-var data = d3.range(0, 10).map(function(y) {
+var data = d3.range(0, 7).map(function(y) {
     return d3.range(0, 40).map(function(x) {
         return {
             x: x / 30,
-            y0: y / 20,
+            y0: y / 9,
             //y: y / 80
-            y: (y / 30) + Math.cos(x / (Math.PI * 3)) * (Math.random() / 5)
+            y: (y / 40) + Math.cos(x / (Math.PI * 3)) * (Math.random() / 5)
         };
     });
 }).reverse();
