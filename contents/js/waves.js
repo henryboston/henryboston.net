@@ -75,7 +75,6 @@ function draw(data) {
 
 
 
-
 window.setInterval(function() {
     for (var y = 0; y < data.length; y++) {
         for (var x = 0; x < data[y].length; x++) {
