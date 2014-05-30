@@ -74,18 +74,29 @@ function draw(data) {
 }
 
 
+function focus() {
+  return window.setInterval(function() {
+      for (var y = 0; y < data.length; y++) {
+          for (var x = 0; x < data[y].length; x++) {
+              data[y][x].y = Math.min(
+                  data[y][x].y0 + 0.09,
+                  Math.max(
+                      data[y][x].y0 - 0.09, data[y][x].y + (Math.random() - 0.5) * Math.sin(x / (Math.PI * 4)) * 0.02));
+          }
+      }
+      draw(data);
+  }, 50);
+}
 
-window.setInterval(function() {
-    for (var y = 0; y < data.length; y++) {
-        for (var x = 0; x < data[y].length; x++) {
-            data[y][x].y = Math.min(
-                data[y][x].y0 + 0.09,
-                Math.max(
-                    data[y][x].y0 - 0.09, data[y][x].y + (Math.random() - 0.5) * Math.sin(x / (Math.PI * 4)) * 0.02));
-        }
-    }
-    draw(data);
-}, 50);
+var animate = focus();
+
+window.addEventListener('focus', function() {
+  animate = focus();
+}, false);
+
+window.addEventListener('blur', function() {
+  window.clearInterval(animate);
+}, false);
 
 draw(data);
 
