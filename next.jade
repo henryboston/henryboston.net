@@ -1,0 +1,30 @@
+
+              //  
+                - var photos = _.chain(contents.photography._.directories).map(function(item) {
+                -     return item.index;
+                -   }).compact().value();
+
+                - var next = _.chain(photos).filter(function(photo) {
+                -     return page.date < photo.date;
+                -   }).sortBy(function(item) {
+                -     return -item.date;
+                -   }).last().value();
+
+                - var prev = _.chain(photos).filter(function(photo) {
+                -     return page.date > photo.date;
+                -   }).sortBy(function(item) {
+                -     return -item.date;
+                -   }).first().value();
+
+                nav.float_right#photo_nav
+                    a(href='/', title='Home', class='home ir') Home
+                    a(href='/photography/', title='Photos', class='photos ir') Photos
+                    - if (next)
+                      a(href='#{next.url}', title='Newer photo', class='arr arr_l') &#8249;
+                    - else
+                      span.arr &#8249;
+
+                    - if (prev)
+                      a(href='#{prev.url}', title='Older photo', class='arr arr_r') &#8250;
+                    - else
+                      span.arr &#8250;
