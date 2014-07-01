@@ -13,21 +13,26 @@ prepend content
 block content
   article.content.project
 
-    header
-
     - var projects = _.chain(contents.projects._.directories).map(function(item) {
     -   return item.index;
     - }).compact().sortBy(function(item) {
     -   return -item.date;
     - }).value();
       each project in projects
+        - var projectURL = project.metadata.subtitle
         secton(id='#{project.title}')
           div.row
             div.span8
-              a(href=project.metadata.subtitle, target="_blank" title=project.title)
-                img.preview(src='#{project.url}photo.jpg', alt=project.title)
-              a(href=project.metadata.subtitle, target="_blank", alt=project.title)
-                h3 #{project.title}
+              if projectURL === undefined
+                a.local(href=project.url, title=project.title)
+                  img.preview(src='#{project.url}photo.jpg', alt=project.title)
+                a.local(href=project.url, title=project.title)
+                  h3 #{project.title}
+              else
+                a(href=project.metadata.subtitle, target="_blank" title=project.title)
+                  img.preview(src='#{project.url}photo.jpg', alt=project.title)
+                a(href=project.metadata.subtitle, target="_blank", alt=project.title)
+                  h3 #{project.title}
               span #{project.metadata.publication}
               != project.html
               span.fade #{project.metadata.built}
