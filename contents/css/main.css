@@ -709,8 +709,6 @@ article {
 }
 .project p {
   font-size: 14px;
-  margin-top: 10px;
-  margin-bottom: 0px;
 }
 /* Individual Photo */
 
@@ -746,12 +744,7 @@ body#photocontent #postex figure.feature-image img {
 }
 
 #project h1 {
-  font-size: 64px; 
-  font-weight: 500;
-  margin-bottom: .3em 0 .1em 0;
-  color: #325b7f;
 }
-
 
 .header-title {
   color: #192D3F;
@@ -969,9 +962,14 @@ body#photocontent #postex figure.feature-image img {
   shape-rendering: optimizeSpeed;
 }
 
+@-webkit-keyframes waves{
+  0% {fill: #325b7f}
+  100% {fill: #8c4845}
+}
 .area {
-  fill: #325b7f;
   opacity: .3;
+  animation:waves 20s ease-out infinite;
+  -webkit-animation:waves 20s ease-out infinite;
 }
 
 .line {
