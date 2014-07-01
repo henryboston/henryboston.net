@@ -1,16 +1,10 @@
 extends layout
 
 block content
-  body#photocontent
-    div#site.sep
-      div#postex
-        div#contentContainer
-          article#photo_blog.content.photo
+        div#project
+          article.content.photo
+            h1 #{page.title}
             figure.feature-image
               img(src='photo.jpg', alt='#{page.title}')
-
-            header.header-title.withPagination
-              hgroup.clearfix
-                h1.float_left #{page.title}
             .clear
-            p #{page.metadata.subtitle}
+            section.content!= page.html 

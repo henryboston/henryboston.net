@@ -740,15 +740,16 @@ body#photocontent #postex figure.feature-image img {
   color: #192D3F;
 }
 
-#photo_blog .header-title {
+#project .header-title {
   margin: 0 auto;
   line-height: 1;
 }
 
-#photo_blog h1 {
-  font-size: 1.5rem;
+#project h1 {
+  font-size: 64px; 
   font-weight: 500;
-  margin-bottom: 8px;
+  margin-bottom: .3em 0 .1em 0;
+  color: #325b7f;
 }
 
 

@@ -34,7 +34,7 @@ block content
                 a(href=project.metadata.subtitle, target="_blank", alt=project.title)
                   h3 #{project.title}
               span #{project.metadata.publication}
-              != project.html
+              p #{project.metadata.intro}
               span.fade #{project.metadata.built}
               h2 #{project.metadata.info}
 
