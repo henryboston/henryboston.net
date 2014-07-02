@@ -9,7 +9,9 @@ intro: While employed as a contractor for Sony Music Entertainment I created web
 ---
 I created websites for famous musicians and media brands including Ghostbusters, Kat Edmonson, Pop Market, Pedro Capó, Mali Music and more.
 
-[relentlessGenerator](http://www.rgenerator.com/ "rGenerator") is a subsidary company of Sony Music Entertainment which is the "leading provider of direct-to-consumer marketing and commerce solutions for the media and entertainment industry." As a front-end web devloper I used HTML5, CSS3, JavaScript, and web-based frameworks to build landing pages and full featured sites for famous muscians and media brands.
+[relentlessGenerator](http://www.rgenerator.com/ "rGenerator") is a subsidary company of Sony Music Entertainment which is the "leading provider of direct-to-consumer marketing and commerce solutions for the media and entertainment industry." 
+
+As a front-end web devloper I used HTML5, CSS3, JavaScript, and web-based frameworks to build landing pages and full featured sites for famous muscians and media brands.
 
 Some examples of my work at [rGenerator](http://www.rgenerator.com/ "rGenerator") include:
 
