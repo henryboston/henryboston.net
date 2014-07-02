@@ -34,7 +34,7 @@ pre,
 .btn,
 table,
 blockquote {
-  margin: 0 0 1.5em;
+  margin: .5em 0 .5em 0;
 }
 
 ul {
@@ -712,7 +712,7 @@ article {
 }
 /* Individual Photo */
 
-body#photocontent #postex figure.feature-image {
+figure.feature-image {
   margin-top: 1em;
   margin-bottom: 1em;
   position: relative;
@@ -962,14 +962,16 @@ body#photocontent #postex figure.feature-image img {
   shape-rendering: optimizeSpeed;
 }
 
+/* Waves Animation
 @-webkit-keyframes waves{
   0% {fill: #325b7f}
   100% {fill: #8c4845}
 }
+*/
 .area {
   opacity: .3;
-  animation:waves 20s ease-out infinite;
-  -webkit-animation:waves 20s ease-out infinite;
+  /*animation:waves 20s ease-out infinite;
+  -webkit-animation:waves 20s ease-out infinite;*/
 }
 
 .line {
