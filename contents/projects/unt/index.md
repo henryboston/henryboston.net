@@ -5,7 +5,7 @@ category: projects
 date: Thu June 1 2014 14:55:36 GMT+0100 (CET)
 publication: Senico, May 2014 - Ongoing
 built: Built with HTML5, Css3, JavaScript, Adobe Creative Suite, Drupal and Lollipops 
-intro: While attending the University of North Texas as a student I have worked three different student assistant positions for two different departments. I have held three unique titles with unique responsibilities web developer, web designer and system administrator.
+intro: While attending the University of North Texas I worked for three seperate departments as a web developer, web designer and system administrator. As a web designer and developer I was in charge of the web presence for up to ten different departments. As a system administrator I provided technical support for over five hundred Drupal websites in the University of North Texas system. 
 ---
 While attending the University of North Texas as a student I have worked three different student assistant positions for two different departments. I have held three unique titles with unique responsibilities: web developer, web designer and system administrator.
 

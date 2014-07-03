@@ -5,7 +5,7 @@ category: projects
 date: Thu June 1 2014 14:55:36 GMT+0100 (CET)
 publication: Senico, May 2014 - Ongoing
 built: Built with HTML5, Css3, JavaScript, jQuery, Adobe Photoshop and Burritos
-intro: As a front-end web developer for Senico I was able to work with startups helping to build their products and acquire members. 
+intro: Worked as a front-end web developer with startups such as GuideHop helping to build their products and acquire members. 
 ---
 As a front-end web developer for [Senico](http://senico.com/ "Senico") I was able to work with startups helping to build their products and acquire members. 
 
