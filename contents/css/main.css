@@ -912,6 +912,16 @@ body#photocontent #postex figure.feature-image img {
   }
   #postex article {
     width: 92%;
+    padding-top: 60px
+  }
+  .info {
+    display: none;
+  }
+  .span8 h3 {
+    font-size: .8em;
+  }
+  .fade {
+    display: none;
   }
 }
 @media only screen and (min-width: 40.001em) {
@@ -932,6 +942,12 @@ body#photocontent #postex figure.feature-image img {
   }
   #masthead hgroup {
     margin-right: 15px;
+  }
+  .info {
+    display: none;
+  }
+  .fade {
+    display: none;
   }
 }
 @media (min-width: 365px) {
