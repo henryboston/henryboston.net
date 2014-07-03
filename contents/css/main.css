@@ -352,8 +352,12 @@ table tr:hover td {
   font-weight: bold;
   line-height: 1;
   margin: 0;
-  font-size: 1.75em;
+  font-size: 3em;
   color: #fff;
+  text-transform: uppercase;
+  z-index: 999;
+  letter-spacing: .3em;
+  text-align: center;
 }
 #masthead hgroup h2 {
   font-weight: 500;
@@ -705,7 +709,7 @@ figure figcaption {
   clear: both;
 }
 article {
-  padding-top: 40px;
+  padding-top: 80px;
 }
 .project p {
   font-size: 14px;
@@ -891,11 +895,11 @@ body#photocontent #postex figure.feature-image img {
   }
   #masthead hgroup {
     margin: 0.55em 0 0 0 !important;
-    float: left;
   }
   #masthead h1 {
     font-size: 1.5em !important;
     margin: 0 !important;
+    letter-spacing: 3px !important;
   }
   #masthead hgroup h2 {
     font-size: 0.95em;
@@ -912,7 +916,7 @@ body#photocontent #postex figure.feature-image img {
   }
   #postex article {
     width: 92%;
-    padding-top: 60px
+    padding-top: 90px
   }
   .info {
     display: none;
@@ -923,11 +927,12 @@ body#photocontent #postex figure.feature-image img {
   .fade {
     display: none;
   }
+  #project h1 {
+    font-size: 1.1em;
+  }
 }
 @media only screen and (min-width: 40.001em) {
   #masthead hgroup {
-  width: 30em;
-  margin-right: 30px;
   }
 
   #postex article {
@@ -978,16 +983,18 @@ body#photocontent #postex figure.feature-image img {
   shape-rendering: optimizeSpeed;
 }
 
-/* Waves Animation
+/* Waves Animation */
 @-webkit-keyframes waves{
   0% {fill: #325b7f}
-  100% {fill: #8c4845}
+  25% {fill: #8c4845}
+  50% {fill: #234059}
+  75% {fill: #133F23}}
+  100% {fill: #325b7f}
 }
-*/
 .area {
   opacity: .3;
-  /*animation:waves 20s ease-out infinite;
-  -webkit-animation:waves 20s ease-out infinite;*/
+  animation:waves 20s ease-out infinite;
+  -webkit-animation:waves 20s ease-out infinite;
 }
 
 .line {
